@@ -5,7 +5,8 @@ import SIGNIN from './pages/SignIn';
 import USERPAGE from './pages/UserPage';
 import FORGOTPASS from './pages/ForgotPassword';
 import REGISTER from './pages/Register';
-import NotFoundPage from './pages/NotFoundPage';
+import NOTFOUNDPAGE from './pages/NotFoundPage';
+import HOTELDETAILS from './pages/Hotel';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Route path="/create-account" component={REGISTER} />
         <Route path="/dashboard" component={USERPAGE} />
         <Route path="/forgot-password" component={FORGOTPASS} />
-        <Route path="*" component={NotFoundPage} />
+        <Route path="/hotel-details" component={HOTELDETAILS} />
+        <Route path="*" component={NOTFOUNDPAGE} />
       </Switch>
     </div>
   );

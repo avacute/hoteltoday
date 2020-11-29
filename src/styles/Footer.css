@@ -1,0 +1,119 @@
+.footer .rail-row{
+    height:50px;
+    display:flex;
+    align-items:center;
+    background-color:#18BA60;
+    /* margin-top:25px; */
+    padding:15;
+}
+
+.footer .wrapper{
+    height:300px;
+    padding: 0%;
+    background-image: url("../images/landscape.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .rail{
+    font-family: Loto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    text-align: center;
+}
+
+.footer .details{
+    height:300px;
+    margin:0;
+    padding-top: 50px;
+    margin-top:20px;
+    background-color:#050505;
+    opacity:0.9;
+}
+
+.footer h4 {
+    text-align: left;
+    font-family: "Loto", Verdana, sans-serif;
+    font-stretch: normal;
+    color: #18BA60;
+}
+
+
+ul{
+    text-decoration: none;
+    color: #fff;
+    text-align:left;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-stretch: normal;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+ a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+a:visited {
+    color: #fff
+    
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: #fff;
+    opacity: 0.8;
+   
+  }
+  
+  /* selected link */
+a:active {
+    color: #18BA60
+  }
+
+.details img{
+    height: 150px;
+}
+
+.social{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.social p {
+    text-align: left;
+    font-family: "Loto", Verdana, sans-serif;
+    font-stretch: normal;
+    font-size: 0.8rem;
+    padding-bottom: 0;
+    padding-right: 50px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer .wrapper{
+        height: 700px;
+    }
+
+    .footer .details{
+        height: 700px;
+    }
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px){
+    .footer .wrapper{
+        height: 350px;
+    }
+
+    .footer .details{
+        height: 350px;
+    }
+}
+

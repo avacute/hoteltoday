@@ -1,0 +1,73 @@
+.search{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    margin-top: -80px;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.search .content{
+    margin: auto;
+    width: 85%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px #9a9b9a;
+}
+.search .content .search-pram{
+    border-radius: 4px;
+    border: solid 1px;
+    border-color: #cdcfce;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.search .content .search-btn{
+    border-radius: 0px !important ;
+    border: solid 1px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search .content .search-pram:focus {
+    border-color: #18BA60 !important;
+    -webkit-box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+    box-shadow: 0 0 2px #18BA60 !important;
+}
+
+.search .content .search-btn:focus {
+    border-color: #abf1cb !important;
+    -webkit-box-shadow: none;
+    background-color: #18BA60 !important;
+    outline: -webkit-focus-ring-color auto 0px;
+    box-shadow: 0 0 2px #18BA60 !important;
+}
+
+.hotels{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    background-color:#fff;
+    position: relative;
+   
+}
+
+.bookingNow{
+    margin-top: -65px;
+    height: 65px;
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+    padding: 10px;
+}
+
+.bookingNow p {
+    margin: 0px;
+    padding: 0px;
+}

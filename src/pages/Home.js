@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Headers from '../components/Header';
-import Booking from '../components/Booking';
+import HEADER from '../components/Header';
+import BOOKING from '../components/Search';
+import FOOTER from '../components/Footer';
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <Headers/>
-                <Booking/>
+                <HEADER/>
+                <BOOKING/>
+                <FOOTER/>
             </div>
         );
     }
