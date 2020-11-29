@@ -1,0 +1,10 @@
+.Navbar{
+    background-color: #18BA60 !important;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: #fff !important;
+    font-size: small;
+    opacity: 1;
+}
