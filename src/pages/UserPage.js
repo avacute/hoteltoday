@@ -13,7 +13,7 @@ class UserPage extends Component {
                         <Col md="3" style={{backgroundColor:"green"}}>1</Col>
                         <Col md="9" style={{backgroundColor:"red"}}>
                             <Switch>
-                                <Route path="/dashboard" component={CHANGEPASS} exact />
+                                <Route path="/sandbox/dashboard" component={CHANGEPASS} exact />
                             </Switch>
                         </Col>
                     </Row>

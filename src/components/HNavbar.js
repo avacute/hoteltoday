@@ -8,7 +8,7 @@ class HNavbar extends Component {
         return (
             <div>
                 <Navbar collapseOnSelect  expand="lg" variant="dark" className="Navbar" fixed="top" >
-                    <Navbar.Brand href="/">hotelToday</Navbar.Brand>
+                    <Navbar.Brand href="/sandbox/">hotelToday</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         
@@ -21,8 +21,8 @@ class HNavbar extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
-                            <Nav.Link href="/create-account">Create Account</Nav.Link>
-                            <Nav.Link href="/signin">Sign in</Nav.Link>
+                            <Nav.Link href="/sandbox/create-account">Create Account</Nav.Link>
+                            <Nav.Link href="/sandbox/signin">Sign in</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

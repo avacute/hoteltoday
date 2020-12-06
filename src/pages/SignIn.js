@@ -29,8 +29,8 @@ class SignIn extends Component {
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicCheckbox" style={{textAlign:"right"}}>
-                                    <span><a href='/forgot-password'>Forgot Password</a></span><span className="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                    <span><a href='/create-account'>Create Account</a></span>
+                                    <span><a href='/sandbox/forgot-password'>Forgot Password</a></span><span className="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                    <span><a href='/sandbox/create-account'>Create Account</a></span>
                                 </Form.Group>
 
                                 <Button variant="success" type="submit" className="signin-button">
