@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import '../styles/HotelDetails.css';
 import LOGO from '../images/logo.png';
 import {Form, Row, Col, Button} from 'react-bootstrap';
-
+import { DateRangePicker} from 'rsuite';
 class HotelDetails extends Component {
     render() {
+        const style = {borderRadius: "4px", border: "solid 1px", borderColor: "#cdcfce", padding: "3px 5px", boxSizing: "border-box", margin: "8px 0"};
         return (
             <div>
                 <div className="hotel-details">
@@ -25,7 +26,12 @@ class HotelDetails extends Component {
                                     <Form.Group  controlId="formPlaintextEmail">
                                         <Row>
                                             <Col sm="6">
-                                                <Form.Control plaintext placeholder="Check-in date" className="hotel-details-pram"/>
+                                                <DateRangePicker    
+                                                    appearance="subtle"
+                                                    size="lg"    
+                                                    showOneCalendar 
+                                                    style = {style} 
+                                                />
                                             </Col>
                                             <Col sm="3">
                                                 <Form.Control plaintext placeholder="Adult" className="hotel-details-pram"/>

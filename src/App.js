@@ -7,7 +7,7 @@ import FORGOTPASS from './pages/ForgotPassword';
 import REGISTER from './pages/Register';
 import NOTFOUNDPAGE from './pages/NotFoundPage';
 import HOTELDETAILS from './pages/Hotel';
-
+import 'rsuite/dist/styles/rsuite-default.min.css';
 
 function App() {
   return (
