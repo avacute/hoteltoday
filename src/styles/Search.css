@@ -58,6 +58,14 @@
    
 }
 
+.hotels .hotel_image {
+    padding-top: 20px
+}
+
+.hotels .hotel_image a {
+    text-decoration: none;
+}
+
 .bookingNow{
     margin-top: -65px;
     height: 65px;
@@ -70,4 +78,10 @@
 .bookingNow p {
     margin: 0px;
     padding: 0px;
+}
+
+.serror{
+    background-color: #ecf0ed;
+    color:red;
+    text-align: center;
 }

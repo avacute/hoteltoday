@@ -13,12 +13,12 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path="/sandbox/" component={HOME} exact />
-        <Route path="/sandbox/signin" component={SIGNIN} />
-        <Route path="/sandbox/create-account" component={REGISTER} />
-        <Route path="/sandbox/dashboard" component={USERPAGE} />
-        <Route path="/sandbox/forgot-password" component={FORGOTPASS} />
-        <Route path="/sandbox/hotel-details" component={HOTELDETAILS} />
+        <Route path='/sandbox/' component={HOME} exact />
+        <Route path='/sandbox/signin' component={SIGNIN} />
+        <Route path='/sandbox/create-account' component={REGISTER} />
+        <Route path='/sandbox/dashboard' component={USERPAGE} />
+        <Route path='/sandbox/forgot-password' component={FORGOTPASS} />
+        <Route path='/sandbox/hotel-details/:id' component={HOTELDETAILS} />
         <Route path="*" component={NOTFOUNDPAGE} />
       </Switch>
     </div>

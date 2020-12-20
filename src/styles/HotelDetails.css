@@ -1,26 +1,41 @@
 .hotel-details{
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /*Safari*/
     position: sticky;
     top: 0;
-    margin-top: 20px;
-    padding-top: 60px;
+    margin-top: 70px;
     z-index: 1;
-    width: 98%;
 }
 
 .hotel-details .hotel-header{
-    margin: auto;
-    width: 90%;
-    min-height: 200px;
+    width: 98%;
     background-color:#fff;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
+.hotel-details .hotel-header .hotel-name{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+    color: #096130;
+    margin-bottom: -10px;
+    font-weight: bold;
+}
+
+.hotel-details .hotel-header .hotel-name-span{
+    font-size: small;
+    padding-left: 10px;
+}
+
+.hotel-details .hotel-header .hotel-about{
+    padding: 10px;
+    padding-top: 0;
+    font-style: normal;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+
 .hotel-details .booking-info{
-    margin: auto;
-    min-height: 220px;
-    width: 90%;
+    width: 98%;
     background-color:#fff;
     border-radius: 4px;
     padding: 20px;
@@ -61,4 +76,11 @@
 }
 .hotel-more{
     height: 500px;
+}
+
+
+.error{
+    margin-bottom: 20px;
+    color:red;
+    text-align: center;
 }
