@@ -3,8 +3,33 @@ import HNAVBAR from '../components/HNavbar';
 import {Form, Button} from 'react-bootstrap';
 import '../styles/UserManagement.css';
 import LOGO from '../images/logo.png';
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
+import {userAuth} from '../state_management/actions/users';
 
 class SignIn extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: "",
+            password:""
+        };
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    userLogIn = (event) => {
+        event.preventDefault();
+        this.props.userAuth(this.state);
+    }
+
     render() {
         return (
             <div>
@@ -14,10 +39,10 @@ class SignIn extends Component {
                             <div className="logo-frame">
                                 <img src={LOGO} alt="logo" className="logo-img"/>
                             </div>
-                            <Form>
+                            <Form onSubmit={this.userLogIn} method="post">
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
+                                    <Form.Control type="email" placeholder="Enter email" name="email" onChange={this.handleChange}/>
                                     <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
                                     </Form.Text>
@@ -25,7 +50,7 @@ class SignIn extends Component {
 
                                 <Form.Group controlId="formBasicPassword">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Password" />
+                                    <Form.Control type="password" placeholder="Password"  name="password" onChange={this.handleChange}/>
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicCheckbox" style={{textAlign:"right"}}>
@@ -45,4 +70,8 @@ class SignIn extends Component {
     }
 }
 
-export default SignIn;
+SignIn.propTypes = {
+    userAuth: PropTypes.func.isRequired
+}
+
+export default connect(null,{userAuth})(SignIn);

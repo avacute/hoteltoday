@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/Search.css';
-import {Form, Button, Row, Col} from 'react-bootstrap';
-import { DateRangePicker} from 'rsuite';
+import {Row, Col} from 'react-bootstrap';
+// import { DateRangePicker} from 'rsuite';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {getHotels} from '../state_management/actions/hotels';
+import SMALL_LID_1 from '../images/small_lid_1.jpg';
+import SMALL_LID_2 from '../images/small_lid_2.jpg';
 
 class Search extends Component {
 
@@ -12,9 +14,7 @@ class Search extends Component {
         this.props.getHotels();
     }
     render() {
-        
         const searchError = <div>{this.props.myError}</div>;
-
         const hotels = this.props.hotels.sort(() => Math.random() - Math.random()).slice(0, 6).map(hotel =>(
             <Col sm="4" className="hotel_image" key={hotel.id}>
                 <a href={'/sandbox/hotel-details/' + hotel.id}>
@@ -27,14 +27,22 @@ class Search extends Component {
             </Col>
         ));
     
-        const style = {borderRadius: "4px", border: "solid 1px", borderColor: "#cdcfce", padding: "3px 5px", boxSizing: "border-box", margin: "8px 0", width:480 };
+        // const style = {borderRadius: "4px", border: "solid 1px", borderColor: "#cdcfce", padding: "3px 5px", boxSizing: "border-box", margin: "8px 0", width:480 };
         return (
             <div>
                 <div className='search'>
                     <div className="content">
-                        <p>From cozy country homes to funky city apartments</p>
+                        {/* <p>From cozy country homes to funky city apartments</p> */}
                         <div className='serror'>{searchError}</div>
-                        <Form>
+                        <Row>
+                            <Col sm="6">
+                                <img src={SMALL_LID_1} alt="lids" className="lid"/>
+                            </Col>
+                            <Col sm="6">
+                                <img src={SMALL_LID_2} alt="lids" className="lid"/>
+                            </Col>
+                        </Row>
+                        {/* <Form>
                             <Form.Group as={Row} controlId="formPlaintextEmail">
                                 <Col sm="4">
                                     <Form.Control plaintext placeholder="Where are you going ?" className="search-pram"/>
@@ -52,7 +60,7 @@ class Search extends Component {
                                     <Button variant="success" type="submit" className="search-btn">Search</Button>
                                 </Col>
                             </Form.Group>
-                        </Form>
+                        </Form> */}
                     </div>
                 </div>
 

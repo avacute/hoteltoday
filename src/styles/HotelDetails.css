@@ -9,6 +9,7 @@
 .hotel-details .hotel-header{
     width: 98%;
     background-color:#fff;
+    padding-bottom: 10px;
 }
 
 .hotel-details .hotel-header .hotel-name{
@@ -45,18 +46,19 @@
     border-radius: 4px;
     border: solid 1px;
     border-color: #cdcfce;
-    padding: 16px 20px;
+    padding: 16px 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    font-size: x-small;
+    font-size: small;
 }
 
 .hotel-details .booking-info .hotel-details-btn{
     border-radius: 0px !important ;
+    float: right;
     border: solid 1px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
-    width: 100%;
+    width: 100px;
     box-sizing: border-box;
 }
 
@@ -75,9 +77,14 @@
     box-shadow: 0 0 2px #18BA60 !important;
 }
 .hotel-more{
-    height: 500px;
+    width: 95%;
+    margin: auto;
 }
 
+.hotel-more .hotel_image {
+    padding-top: 20px;
+    border-radius: 10px;
+}
 
 .error{
     margin-bottom: 20px;

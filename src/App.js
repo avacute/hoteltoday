@@ -7,6 +7,8 @@ import FORGOTPASS from './pages/ForgotPassword';
 import REGISTER from './pages/Register';
 import NOTFOUNDPAGE from './pages/NotFoundPage';
 import HOTELDETAILS from './pages/Hotel';
+import CHECKOUT from './pages/CheckOut';
+import PAYMENT from './pages/Payment';
 import 'rsuite/dist/styles/rsuite-default.min.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path='/sandbox/dashboard' component={USERPAGE} />
         <Route path='/sandbox/forgot-password' component={FORGOTPASS} />
         <Route path='/sandbox/hotel-details/:id' component={HOTELDETAILS} />
+        <Route path='/sandbox/checkout' component={CHECKOUT} />
+        <Route path='/sandbox/payment' component={PAYMENT} />
         <Route path="*" component={NOTFOUNDPAGE} />
       </Switch>
     </div>

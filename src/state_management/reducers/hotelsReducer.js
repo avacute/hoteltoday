@@ -32,6 +32,7 @@ export default function(state = initialState, action){
                 ...state,
                 suites:action.payload
             }
+            
         default:
             return state;
     }

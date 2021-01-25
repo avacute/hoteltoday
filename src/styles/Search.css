@@ -85,3 +85,30 @@
     color:red;
     text-align: center;
 }
+
+.search .lid{
+    margin: 5px;
+    width:100%;
+    max-width:800px;
+    text-align: center;
+    -webkit-transition:all 5s ease-in-out;
+    -o-transition:all 5s ease-in-out;
+    -ms-transition:all 5s ease-in-out;
+    transition:all 5s ease-in-out;
+    -webkit-animation:blink normal 10s infinite ease-in-out; 
+    -ms-animation:blink normal 10s infinite ease-in-out; 
+    animation:blink normal 10s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

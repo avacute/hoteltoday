@@ -50,12 +50,12 @@ export const getHotelsByID = (id) => async dispatch => {
 };
 
 
-export const getSuiteByHotelID = () => async dispatch => {
+export const getSuiteByHotelID = (id) => async dispatch => {
     try {
         const response = await Axios(
             {
                 method: 'get',
-                url: API_BASE + 'suites/' ,
+                url: API_BASE + 'suites/' + id ,
                 headers: {
                     "Content-Type": "application/json",
                 }
@@ -72,6 +72,9 @@ export const getSuiteByHotelID = () => async dispatch => {
         });
     }
 };
+
+
+
 
 
 

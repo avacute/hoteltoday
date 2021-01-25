@@ -1,0 +1,74 @@
+.checkout{
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 98%;
+    padding: 20px;
+}
+
+.checkout .cart {
+    padding: 20px;
+    margin: auto;
+    /* border: groove 1px;  */
+}
+
+.checkout .payment {
+    padding: 20px;
+    margin: auto;
+    /* box-shadow: 0px 0px 20px 4px #dfe0df; */
+}
+
+.checkout .details-pram{
+    border: 0 !important;
+    border-radius: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #cdcfce !important;
+    padding: 16px 10px !important;
+    margin: auto !important;
+    height: 50px !important;
+    box-sizing: border-box !important;
+    font-size: small !important;
+}
+
+.checkout .label{
+    padding: 1px 25px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+.checkout .Checkbtn{
+    border-radius: 0px !important ;
+    border-color:#18BA60 !important;
+    float: right;
+    border: solid 1px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #18BA60;
+    color: #fff;
+}
+
+.payment-paystack{
+    padding: 20px;
+    box-shadow: 0px 0px 5px 1px #9a9b9a;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+.spinner {
+    animation: spin infinite 5s linear;
+
+    /*You can increase or decrease the timer (5s) to 
+     increase or decrease the speed of the spinner*/
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
