@@ -142,7 +142,7 @@ class HotelDetails extends Component {
                                                 </select>
                                             </Col>
                                             <Col sm="6"> 
-                                               <a href= {"/sandbox/checkout?"
+                                               <a href= {"/checkout?"
                                                 +"hotelId=" + this.props.hotels.id
                                                 + "&adultNo=" + this.state.values.adultNo
                                                 + "&room=" + this.state.values.room 

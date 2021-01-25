@@ -59,7 +59,7 @@ class Register extends Component {
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicCheckbox" style={{textAlign:"right"}}>
-                                    <span><a href='/sandbox/signin'>I have an account</a></span>
+                                    <span><a href='/signin'>I have an account</a></span>
                                 </Form.Group>
 
                                 <Button variant="success" type="submit" className="signin-button">

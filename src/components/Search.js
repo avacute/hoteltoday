@@ -17,7 +17,7 @@ class Search extends Component {
         const searchError = <div>{this.props.myError}</div>;
         const hotels = this.props.hotels.sort(() => Math.random() - Math.random()).slice(0, 6).map(hotel =>(
             <Col sm="4" className="hotel_image" key={hotel.id}>
-                <a href={'/sandbox/hotel-details/' + hotel.id}>
+                <a href={'/hotel-details/' + hotel.id}>
                     <img src={require(`../images/${hotel.hotel_image}`)} alt={hotel.hotel_name} width="100%" height="100%"/>
                     <div className='bookingNow'>
                         <p>{hotel.hotel_name.toUpperCase()} ::. Book Now </p>
